@@ -38,12 +38,14 @@ Test your luck and logic — guess a random number between 1 and 100 within 10 a
 ---
 
 ## 📁 Project Structure
+  
+number-guessing-game/  
+│  
+├── index.html # Main HTML file  
+├── style.css # Custom styling  
+└── script.js # JavaScript game logic  
 
-number-guessing-game/
-│
-├── index.html # Main HTML file
-├── style.css # Custom styling
-└── script.js # JavaScript game logic
+---
 
 ## ⚙️ How to Run
 
@@ -56,8 +58,18 @@ number-guessing-game/
 
     cd number-guessing-game
 
-3. Open **index.html** in your browser.
+3. **Install dependencies (if using Tailwind CLI)**
 
+If you used Tailwind via CDN, skip this step.
+Otherwise, if you generated output.css using Tailwind CLI:
+```bash
+npm install
+npx tailwindcss -i ./style.css -o ./output.css --watch
+```
+
+4. Open **index.html** in your browser.
+
+---
 
 ## 🧠 Game Logic Overview
 
@@ -73,7 +85,9 @@ number-guessing-game/
 
 - When you win or run out of attempts, the input disables and a New Game button appears.
 
-**Example Gameplay**
+---
+
+## 👾 Example Gameplay
 
 Enter a guess: 45
 📈 Try a Higher number.
@@ -86,4 +100,6 @@ Guesses Remaining: 8
 Enter a guess: 52
 🎉 Congratulations! Your guess 52 was correct!
 
-⭐ *If you like this project, consider giving it a star on GitHub!*
+---
+
+⭐ **If you like this project, consider giving it a star on GitHub!**
